@@ -15,16 +15,17 @@ class LoginField extends StatelessWidget {
     return ConstrainedBox(
       constraints: const BoxConstraints(maxWidth: 400),
       child: TextFormField(
+        // cursorColor: Colors.red,
         controller: controller,
         decoration: InputDecoration(
-          contentPadding: const EdgeInsets.all(27),
+          contentPadding: const .all(27),
           enabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: Pallete.borderColor, width: 3),
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: .circular(10),
           ),
           focusedBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: Pallete.gradient2, width: 3),
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: .circular(10),
           ),
           hintText: hintText,
         ),
